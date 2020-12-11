@@ -7,6 +7,7 @@ import AddScreen from "./screens/AddScreen";
 import * as SQLite from "expo-sqlite";
 
 const db = SQLite.openDatabase("notes.db");
+db.transaction(callback, error, success)
 
 // Stack Nav
 const Stack = createStackNavigator();
