@@ -1,13 +1,8 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import NotesStack from "./screens/NotesStack";
 import AddScreen from "./screens/AddScreen";
-import * as SQLite from "expo-sqlite";
-
-const db = SQLite.openDatabase("notes.db");
-db.transaction(callback, error, success)
 
 // Stack Nav
 const Stack = createStackNavigator();
